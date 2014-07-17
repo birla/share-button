@@ -306,6 +306,6 @@ class Share extends ShareUtils
 
     if @config.networks.facebook.load_sdk isnt opts.load_sdk
       console.warn "You are unable to change the Facebook load_sdk option after the button has been initialized. Please update your Facebook filters accordingly."
-      delete opts.app_id
+      delete opts.load_sdk
 
     return opts
